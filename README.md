@@ -2,6 +2,10 @@
 
 A rocaesque custom element to interactively transclude remote forms: Progressively enhance your multi page forms.
 
+## Demo
+
+Clone repo, then `npm install && npm run demo`. Browse to the url which gets displayed (usually http://localhost:3000)
+
 ## Usage
 
 Wrap the starting point of your form with the form-sequence element. By applying the id of the wrapped anchor to the `capture` attribute, the click gets intercepted. Instead of changing to the next page, the page gets loaded in the background and the desired form gets transcluded here.
@@ -61,8 +65,3 @@ Have a look into `demo/style.css`. There you will find style definitions, some o
       content: "";
       clear: both;
     }
-
-
-## Demo
-
-Clone repo, then `npm install && npm run demo`. Browse to the url which gets displayed (usually http://localhost:3000)
