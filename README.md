@@ -31,6 +31,38 @@ The remote form could look like this
 - `cancel`  
   If the form has something like a cancel action to go back, you can put the id/name of that element here to be able to "undo" the transclusion.
 
+### Styling Hints
+
+After the form has been transcluded, the markup in the form-sequence element will look like this:
+
+    <form-sequence capture="goto-edit" form="edit-something-form" cancel="cancel-form">
+      <div role="heading">Eit Something</div>
+      <div origin>
+        <a id="goto-edit" href="/something/edit">Edit Something</a>
+      </div>
+      <div remote>
+        ... your remote form
+      </div>
+    </form-sequence>
+
+Have a look into `demo/style.css`. There you will find style definitions, some of which you'll likely want to apply to your app:
+
+    // Hide the (retained) entry point element
+    form-sequence [origin] {
+      display: none;
+    }
+
+    // style the inserted heading element
+    form-sequence [role="heading"] { ... }
+
+    // clearfix, to be sure
+    form-sequence::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+
+
 ## Demo
 
 Clone repo, then `npm install && npm run demo`. Browse to the url which gets displayed (usually http://localhost:3000)
