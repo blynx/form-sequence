@@ -1,0 +1,24 @@
+form-sequence {
+  display: block;
+}
+
+form-sequence[active] {
+  margin-bottom: .5rem;
+}
+
+form-sequence::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+form-sequence [origin] {
+  display: none;
+}
+
+form-sequence [role="heading"] {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: .375em;
+  margin-top: .125em;
+}

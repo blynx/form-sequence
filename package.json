@@ -1,0 +1,35 @@
+{
+  "name": "form-sequence",
+  "version": "0.0.1",
+  "description": "A rocaesque custom element to fetch and interact with remote forms",
+  "main": "index.js",
+  "scripts": {
+    "build": "faucet --compact",
+    "demo": "faucet --config faucet-demo.config --watch --liveserve",
+    "lint": "npx eslint index.js lib",
+    "test": "npm run lint && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blynx/form-sequence.git"
+  },
+  "author": "Steffen Henschel <mail@steffenhenschel.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blynx/form-sequence/issues"
+  },
+  "homepage": "https://github.com/blynx/form-sequence#readme",
+  "devDependencies": {
+    "ava": "^3.3.0",
+    "esm": "^3.2.25",
+    "faucet-pipeline-esnext": "^2.0.10",
+    "faucet-pipeline-js": "^2.0.10",
+    "live-server": "^1.2.1",
+    "prettier": "^1.19.1"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  }
+}
