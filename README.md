@@ -1,8 +1,6 @@
 # form-sequence
 
-A rocaesque custom element to interactively transclude remote forms.  
-
-Progressively enhance your 
+A rocaesque custom element to interactively transclude remote forms: Progressively enhance your multi page forms.
 
 ## Usage
 
