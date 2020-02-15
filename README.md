@@ -30,3 +30,7 @@ The remote form could look like this
 
 - `cancel`  
   If the form has something like a cancel action to go back, you can put the id/name of that element here to be able to "undo" the transclusion.
+
+## Demo
+
+Clone repo, then `npm install && npm run demo`. Browse to the url which gets displayed (usually http://localhost:3000)
