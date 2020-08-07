@@ -20,14 +20,14 @@
   },
   "homepage": "https://github.com/blynx/form-sequence#readme",
   "devDependencies": {
-    "ava": "^3.5.0",
+    "ava": "^3.11.1",
     "browser-env": "^3.3.0",
     "esm": "^3.2.25",
-    "faucet-pipeline-esnext": "^2.0.10",
-    "faucet-pipeline-js": "^2.0.10",
-    "jsdom": "^16.2.1",
+    "faucet-pipeline-esnext": "^2.1.6",
+    "faucet-pipeline-js": "^2.1.6",
+    "jsdom": "^16.3.0",
     "live-server": "^1.2.1",
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.5"
   },
   "ava": {
     "require": [
