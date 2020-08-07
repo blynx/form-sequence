@@ -3,6 +3,23 @@
     <title>Form Sequence Demo</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/script.js"></script>
+    <style>
+      .alert {
+        color: orangered;
+        border: 1px solid orangered;
+        border-radius: 3px;
+        padding: 5px 4px 2px;
+      }
+
+      .alert-title {
+        display: inline-block;
+        font-weight: bold;
+      }
+
+      .alert-message {
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -28,9 +45,21 @@
           <a id="form-entry" href="/step2.html">skip step 1</a>
         </form-sequence>
       </p>
+      <p>
+        <form-sequence capture="form-entry" form="configuration-form" cancel="form-cancel">
+          <a id="form-entry" href="/doesnotexist.html">oh oh, 404 not found</a>
+        </form-sequence>
+      </p>
     </main>
     <footer>
 
     </footer>
+    <template id="error-template">
+      <div class="alert">
+        <h3 class="alert-title"></h3>
+        <p class="alert-message"></p>
+        <button type="button" id="form-cancel">x</button>
+      </div>
+    </template>
   </body>
 </html>
