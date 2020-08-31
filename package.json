@@ -1,6 +1,6 @@
 {
   "name": "form-sequence",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A rocaesque custom element to fetch and interact with remote forms",
   "main": "index.js",
   "scripts": {
