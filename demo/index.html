@@ -41,13 +41,18 @@
         </form-sequence>
       </p>
       <p>
-        <form-sequence capture="form-entry" form="configuration-form" cancel="form-cancel">
-          <a id="form-entry" href="/step2.html">skip step 1</a>
+        <form-sequence capture="form-entry-skip" form="configuration-form" cancel="form-cancel">
+          <a id="form-entry-skip" href="/step2.html">skip step 1</a>
         </form-sequence>
       </p>
       <p>
-        <form-sequence capture="form-entry" form="configuration-form" cancel="form-cancel">
-          <a id="form-entry" href="/doesnotexist.html">oh oh, 404 not found</a>
+        <form-sequence capture="form-entry-404" form="configuration-form" cancel="form-cancel">
+          <a id="form-entry-404" href="/doesnotexist.html">oh oh, 404 not found</a>
+        </form-sequence>
+      </p>
+      <p>
+        <form-sequence capture="form-entry-wrong-origin" form="configuration-form" cancel="form-cancel">
+          <a id="form-entry-wrong-origin" href="http://www.google.de/">Google?</a>
         </form-sequence>
       </p>
     </main>
