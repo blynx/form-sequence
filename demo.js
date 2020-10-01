@@ -12,5 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     element.addEventListener("done", e => console.log("done triggered", e.target))
     element.addEventListener("success", e => console.log("success triggered", e.target))
     element.addEventListener("error", e => console.log("error triggered", e.target))
+
+    element.addEventListener("return", e => {
+      alert("Form sequence returned. Will do page reload!")
+      window.location.href = e.detail.url.href
+    })
   })
 })
