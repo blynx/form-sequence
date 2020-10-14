@@ -27,7 +27,8 @@ Clone repo, then `npm install && npm run demo`. Browse to the url which gets dis
 2. Set the form attribute
 3. Listen to the return event and decide what to do finally
 
-1, 2 - Wrap the starting point of your form with the form-sequence element: Apply the id of the wrapped anchor to the `capture` attribute so the click gets intercepted. Instead of changing to the next page, the page gets loaded in the background and the desired form gets transcluded here.
+1, 2 - Wrap the starting point of your form with the form-sequence element: (Optionally) apply the id of the wrapped anchor to the `capture` attribute so the click gets intercepted. And (optionally) supply names or ids to the `form` attribute. If nothing is supplied to each, or the attributes are just left out, the first occuring anchor inside the `<form-sequence>` or the first form on succeeding pages is chosen.  
+Instead of changing to the next page, the page gets loaded in the background and the desired form gets transcluded here.
 
 Example:
 
@@ -52,13 +53,13 @@ The remote form could look like this
 
 ### Attributes
 
-- `capture`  
+- `capture` (optionally)  
   Provide the ids or names of the entry point element. Single entries or comma separated lists are valid. E.g. `my-link` or `my-link, alternate-link`.
 
-- `form`  
+- `form` (optionally)  
   The ids or names of the forms which are going to get transcluded. Single entries or comma separated lists are valid. E.g. `my-form` or `my-form, other-form, fallback-form`.
 
-- `cancel`  
+- `cancel` (optionally)  
   If the form has something like a cancel action to go back, you can put the ids/names of that element here to be able to "undo" the transclusion. A list is possible here, too.
 
 ### Events
