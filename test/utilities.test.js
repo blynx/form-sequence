@@ -1,15 +1,15 @@
 require('browser-env')()
 let test = require("ava")
 
-let nameOrId = require("../lib/utilities.js").nameOrId
+let namesOrIds = require("../lib/utilities.js").namesOrIds
 let htmlNodeFromString = require("../lib/utilities.js").htmlNodeFromString
 
-test("utility: nameOrId()", t => {
-  let name = "pete"
-  let expected = '#pete, [name="pete"]'
-  let result = nameOrId(name)
+test("utility: namesOrIds()", t => {
+  let list = "this, or, that"
+  let expected = '#this,[name="this"],#or,[name="or"],#that,[name="that"]'
+  let result = namesOrIds(list)
 
-  t.is(result, expected, "builds a correct query string")
+  t.is(result, expected, "builds a correct query string from comma separated list")
 })
 
 test("utility: htmlNodeFromString()", t => {

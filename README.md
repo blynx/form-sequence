@@ -53,13 +53,13 @@ The remote form could look like this
 ### Attributes
 
 - `capture`  
-  Provide the id of the entry point element.
+  Provide the ids or names of the entry point element. Single entries or comma separated lists are valid. E.g. `my-link` or `my-link, alternate-link`.
 
 - `form`  
-  The name of the form which is going to get transcluded.
+  The ids or names of the forms which are going to get transcluded. Single entries or comma separated lists are valid. E.g. `my-form` or `my-form, other-form, fallback-form`.
 
 - `cancel`  
-  If the form has something like a cancel action to go back, you can put the id/name of that element here to be able to "undo" the transclusion.
+  If the form has something like a cancel action to go back, you can put the ids/names of that element here to be able to "undo" the transclusion. A list is possible here, too.
 
 ### Events
 
