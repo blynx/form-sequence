@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     element.addEventListener("start", e => console.log("start triggered", e.target))
     element.addEventListener("done", e => console.log("done triggered", e.target))
     element.addEventListener("success", e => console.log("success triggered", e.target))
-    element.addEventListener("error", e => console.log("error triggered", e.target))
+    element.addEventListener("error", e => console.log("error triggered", e.target, e.detail))
     element.addEventListener("return", e => console.log("return triggered", e.target))
 
     element.addEventListener("return", e => {
