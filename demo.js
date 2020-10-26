@@ -9,7 +9,7 @@ configure({
 document.addEventListener("DOMContentLoaded", () => {
   customElements.define("form-sequence", FormSequence)
   Array.from(document.querySelectorAll("form-sequence")).forEach(element => {
-    element.addEventListener("start", e => console.log("start triggered", e.target))
+    element.addEventListener("start", e => console.log("start triggered", e.target, e.detail))
     element.addEventListener("done", e => console.log("done triggered", e.target))
     element.addEventListener("success", e => console.log("success triggered", e.target))
     element.addEventListener("error", e => console.log("error triggered", e.target, e.detail))
