@@ -10,6 +10,7 @@ A rocaesque custom element to interactively transclude remote forms: Progressive
         - [Basics](#basics)
         - [Attributes](#attributes)
         - [Events](#events)
+        - [Configuration](#configuration)
         - [Methods](#methods)
         - [Styling Hints](#styling-hints)
 
@@ -77,6 +78,10 @@ You can listen to some events which get fired during the process cycle:
   
 - `error`: Called when an error occurs.  
   No details provided.
+
+### Configuration
+
+[...]
 
 ### Methods
 
